@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxIO2QaPPprRQ9hdQF76VCnF7oAc5gFPKoidKvDZ5cLRc3FJWkBm3-A_1JRqRdFVtwj/exec', {
+      const response = await fetch('/api/contact-proxy', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
