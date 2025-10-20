@@ -17,12 +17,25 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Here you would typically send the data to your backend
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxIO2QaPPprRQ9hdQF76VCnF7oAc5gFPKoidKvDZ5cLRc3FJWkBm3-A_1JRqRdFVtwj/exec', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      if (result.result === "success") {
+        alert('Thank you for your message! We will get back to you soon.');
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+      } else {
+        alert('There was an error. Please try again!');
+      }
+    } catch (err: any) {
+      alert('An error occurred: ' + err.message);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
