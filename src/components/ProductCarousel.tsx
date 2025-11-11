@@ -78,7 +78,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
             {products.map((product) => (
               <CarouselItem
                 key={product.id}
-                className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+                className="pl-4 pb-6 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
               >
                 <div className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
                   {/* Product Image */}
