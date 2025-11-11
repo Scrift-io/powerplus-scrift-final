@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import ProductGrid from '@/components/ProductGrid';
+import ProductCarouselsSection from '@/components/ProductCarouselsSection';
 import HeroBanner from '@/components/HeroBanner';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
@@ -24,7 +24,7 @@ const Index = () => {
       <div className={`transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <Header />
         <Hero />
-        <ProductGrid />
+        <ProductCarouselsSection />
         <HeroBanner />
         <AboutSection />
         <Footer />
