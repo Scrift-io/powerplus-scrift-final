@@ -103,63 +103,63 @@ export const productCategories: ProductCategory[] = [
         id: 1,
         name: 'Paradise Rose',
         description: 'Elegant floral fragrance',
-        image: '/lovable-uploads/690e635a-9d1e-4a02-8dca-5a4a092e3681.png',
+        image: '/lovable-uploads/4c4d6506-4f79-49c9-bfb0-0e0281361301.png',
         rating: 4.8
       },
       {
         id: 2,
         name: 'Paradise Jasmin',
         description: 'Sweet and soothing jasmine',
-        image: '/lovable-uploads/2849f39e-5102-4eb1-bdc7-1cdd9233a577.png',
+        image: '/lovable-uploads/85401564-fb8b-4169-bb40-b1f37d964a2a.png',
         rating: 4.7
       },
       {
         id: 3,
         name: 'Paradise Bouquet',
         description: 'A blend of fresh flowers',
-        image: '/lovable-uploads/24dab3bb-d9e9-45da-8cf9-c2a47c13f86d.png',
+        image: '/lovable-uploads/690e635a-9d1e-4a02-8dca-5a4a092e3681.png',
         rating: 4.9
       },
       {
         id: 4,
         name: 'Paradise Lavender',
         description: 'Calming lavender essence',
-        image: '/lovable-uploads/0219b92e-01d0-4af5-9252-ddfab7f9f3f8.png',
+        image: '/lovable-uploads/a687177a-b08a-4713-a8aa-f708f2813608.png',
         rating: 4.6
       },
       {
         id: 5,
         name: 'Paradise Luxury',
         description: 'Premium fragrance experience',
-        image: '/lovable-uploads/0d7ff15e-30ad-4f11-be3f-554827988ba0.png',
+        image: '/lovable-uploads/87854141-f532-46ff-a865-fca8242920bf.png',
         rating: 5
       },
       {
         id: 6,
         name: 'Paradise Xtreme',
         description: 'Bold and long-lasting scent',
-        image: '/lovable-uploads/f102405a-0aea-4f87-b41c-67aa702a4110.png',
+        image: '/lovable-uploads/ae742c6c-57c2-4757-a0ea-a12452e44d08.png',
         rating: 4.8
       },
       {
         id: 7,
         name: 'Paradise Aroma',
         description: 'Aromatic freshness',
-        image: '/lovable-uploads/2d70e6ae-6aff-4dea-82d3-2163b8eb9bf1.png',
+        image: '/lovable-uploads/2123df41-38b7-41cd-8601-8a721d87e934.png',
         rating: 4.5
       },
       {
         id: 8,
         name: 'Paradise Blue Moon',
         description: 'Fresh aquatic fragrance',
-        image: '/lovable-uploads/2123df41-38b7-41cd-8601-8a721d87e934.png',
+        image: '/lovable-uploads/0d7ff15e-30ad-4f11-be3f-554827988ba0.png',
         rating: 4.7
       },
       {
         id: 9,
         name: 'Paradise Artistic',
         description: 'Unique artistic blend',
-        image: '/lovable-uploads/5404869b-670f-4f45-85e7-834d76e697dd.png',
+        image: '/lovable-uploads/0ed9c39c-2a6c-4334-b921-62ec83961d77.png',
         rating: 4.6
       }
     ]
@@ -172,163 +172,163 @@ export const productCategories: ProductCategory[] = [
     products: [
       {
         id: 1,
-        name: 'Washroom Cleaner',
-        description: 'Powerful bathroom cleaning',
-        image: '/lovable-uploads/852b60be-7f17-4070-b57a-94cace9da9a5.png',
+        name: 'Super Bleach',
+        description: '1L - Removes stains effectively',
+        image: '/lovable-uploads/a75cd7f2-6107-4afa-b889-55c4e8254818.png',
         rating: 4.7
       },
       {
         id: 2,
-        name: 'Bleach',
-        description: 'Strong whitening power',
-        image: '/lovable-uploads/0ec76395-7eaf-4d60-b578-318e266b3023.png',
-        rating: 4.5
-      },
-      {
-        id: 3,
-        name: 'Glass Cleaner',
-        description: 'Streak-free shine',
-        image: '/lovable-uploads/a8af77ec-411c-4845-92a0-1b690137c9fe.png',
+        name: 'Glass & Household Cleaner',
+        description: '500ml Spray - Glass cleaning',
+        image: '/lovable-uploads/d3996c21-3859-4977-adfd-1ddc513a23bf.png',
         rating: 4.6
       },
       {
-        id: 4,
+        id: 3,
         name: 'Toilet Cleaner',
-        description: 'Deep cleaning formula',
-        image: '/lovable-uploads/eeac2e71-54c3-458f-9681-c0fe5d9b0731.png',
+        description: '500ml - Twin pack formula',
+        image: '/lovable-uploads/0ec76395-7eaf-4d60-b578-318e266b3023.png',
         rating: 4.8
       },
       {
-        id: 5,
+        id: 4,
         name: 'Dishwash Liquid',
-        description: 'Tough on grease',
-        image: '/lovable-uploads/6a6da22e-7961-40ee-bbd7-20bf80df7af1.png',
+        description: '500ml - Grease cutting',
+        image: '/lovable-uploads/f4d7c799-cff8-4c65-b45b-6dd5241b2358.png',
+        rating: 4.5
+      },
+      {
+        id: 5,
+        name: 'Floor Cleaner - Lemon 1L',
+        description: 'Kills germs, lemon scent',
+        image: '/lovable-uploads/5fbaccfe-76aa-4e45-b10d-fe1016e58c53.png',
         rating: 4.7
       },
       {
         id: 6,
-        name: 'Floor Cleaner - Rose',
-        description: 'Fresh floral scent',
-        image: '/lovable-uploads/9108e5b5-16cc-4fe4-97c8-a94aca46495e.png',
+        name: 'Floor Cleaner - Bouquet',
+        description: '500ml - Floral bouquet',
+        image: '/lovable-uploads/87a80626-bd1f-40fc-9aea-95d280e762cd.png',
         rating: 4.6
       },
       {
         id: 7,
-        name: 'Floor Cleaner - Jasmine',
-        description: 'Sweet jasmine fragrance',
-        image: '/lovable-uploads/68b63331-6a10-4736-88aa-32d0674d3771.png',
-        rating: 4.6
-      },
-      {
-        id: 8,
-        name: 'Floor Cleaner - Lavender',
-        description: 'Calming lavender',
-        image: '/lovable-uploads/53ed501b-93a9-4108-bb20-712a6e277719.png',
+        name: 'Dish Wash Liquid - Original',
+        description: '500ml - Lemon fragrance',
+        image: '/lovable-uploads/e4a81fa0-9879-4589-81d3-d576c87b1c1b.png',
         rating: 4.5
       },
       {
+        id: 8,
+        name: 'Floor Cleaner - Jasmine',
+        description: '500ml - Soothing jasmine',
+        image: '/lovable-uploads/c9b6c538-2706-4631-bcec-e408d9c95da8.png',
+        rating: 4.8
+      },
+      {
         id: 9,
-        name: 'Floor Cleaner - Lemon',
-        description: 'Refreshing citrus clean',
-        image: '/lovable-uploads/20dd07ad-83f2-4a0f-8220-1efead871d54.png',
+        name: 'Floor Cleaner - Lavender',
+        description: '500ml - Calming lavender',
+        image: '/lovable-uploads/eebe67ea-0388-4bdc-92dd-cbadcc098391.png',
         rating: 4.7
       },
       {
         id: 10,
-        name: 'Floor Cleaner - Pine',
-        description: 'Forest fresh scent',
-        image: '/lovable-uploads/f90fe381-8b38-4149-b53b-a0f4472cf957.png',
+        name: 'Floor Cleaner - Lemon 500ml',
+        description: 'Refreshing lemon scent',
+        image: '/lovable-uploads/25ed8e74-de58-4d1d-a974-a45dea7bab4d.png',
         rating: 4.6
       },
       {
         id: 11,
-        name: 'Bathroom Cleaner',
-        description: 'Complete bathroom care',
-        image: '/lovable-uploads/e7228be2-fadc-4299-894a-bd1d07d98053.png',
-        rating: 4.7
-      },
-      {
-        id: 12,
-        name: 'Blue Liquid',
-        description: 'Multi-purpose cleaner',
-        image: '/lovable-uploads/64c304bb-e073-47d3-a2a4-f7098c5406ec.png',
+        name: 'Floor Cleaner - Fresh',
+        description: '500ml - Clean and fresh',
+        image: '/lovable-uploads/227ae817-bd05-4ffc-a60c-9b6e66304303.png',
         rating: 4.5
       },
       {
-        id: 13,
-        name: 'Renew All - Rose',
-        description: 'All-in-one rose freshness',
-        image: '/lovable-uploads/6387d7b6-937c-4619-bcc6-4b973742f9a6.png',
+        id: 12,
+        name: 'Floor Cleaner - Lavender 1L',
+        description: 'Large size lavender',
+        image: '/lovable-uploads/6ea1dd6c-50c7-4790-b43e-1d1a9429de8e.png',
         rating: 4.8
+      },
+      {
+        id: 13,
+        name: 'Floor Cleaner - Jasmine 1L',
+        description: 'Premium jasmine scented',
+        image: '/lovable-uploads/2804e8b6-d759-4399-864c-09c35d466a02.png',
+        rating: 4.7
       },
       {
         id: 14,
-        name: 'Renew All - Jasmine',
-        description: 'Complete jasmine solution',
-        image: '/lovable-uploads/e341ad56-a5c3-4133-b364-cc6b46bcd737.png',
-        rating: 4.7
+        name: 'Renew All - Auto',
+        description: 'Revitalizes car interiors',
+        image: '/lovable-uploads/ec4cbd82-53d7-45df-9683-7c77193a6be8.png',
+        rating: 4.6
       },
       {
         id: 15,
-        name: 'Renew All - Lavender',
-        description: 'Total lavender care',
-        image: '/lovable-uploads/e2c5a68b-18b0-425d-bd66-2ac27a8998d2.png',
-        rating: 4.7
+        name: 'Renew All - Electronics',
+        description: 'Restores appliances',
+        image: '/lovable-uploads/ec4cbd82-53d7-45df-9683-7c77193a6be8.png',
+        rating: 4.5
       },
       {
         id: 16,
-        name: 'Renew All - Lemon',
-        description: 'Complete lemon clean',
-        image: '/lovable-uploads/335f5d1c-9396-4d75-995c-acf07c6cf6ab.png',
-        rating: 4.8
+        name: 'Renew All - Furniture',
+        description: 'Revitalizes furniture',
+        image: '/lovable-uploads/ec4cbd82-53d7-45df-9683-7c77193a6be8.png',
+        rating: 4.7
       },
       {
         id: 17,
-        name: 'Renew All - Pine',
-        description: 'All-purpose pine fresh',
-        image: '/lovable-uploads/42d9cba6-0b01-4b32-b20c-b63ced464bfa.png',
-        rating: 4.6
+        name: 'Bathroom Cleaner',
+        description: 'Tackles dirt and scum',
+        image: '/lovable-uploads/c3cc8f9c-0c5c-47c7-a84a-54d5a41215e0.png',
+        rating: 4.8
       },
       {
         id: 18,
-        name: 'Liquid Detergent - Rose',
-        description: 'Gentle rose formula',
-        image: '/lovable-uploads/71d013c5-e57d-4153-a6c2-cc648722d1d6.png',
-        rating: 4.7
-      },
-      {
-        id: 19,
-        name: 'Liquid Detergent - Lavender',
-        description: 'Soothing lavender wash',
-        image: '/lovable-uploads/f4d7c799-cff8-4c65-b45b-6dd5241b2358.png',
+        name: 'Blue Liquid - 75ml',
+        description: 'Revive white brightness',
+        image: '/lovable-uploads/e378202b-db45-494d-9eaa-8e30352c074a.png',
         rating: 4.6
       },
       {
-        id: 20,
-        name: 'Liquid Detergent - Jasmine',
-        description: 'Fresh jasmine clean',
-        image: '/lovable-uploads/227ae817-bd05-4ffc-a60c-9b6e66304303.png',
+        id: 19,
+        name: 'Blue Liquid - 150ml',
+        description: 'Restore whiteness',
+        image: '/lovable-uploads/e378202b-db45-494d-9eaa-8e30352c074a.png',
         rating: 4.7
       },
       {
+        id: 20,
+        name: 'Blue Liquid - 100ml',
+        description: 'Adds brilliance',
+        image: '/lovable-uploads/e378202b-db45-494d-9eaa-8e30352c074a.png',
+        rating: 4.5
+      },
+      {
         id: 21,
-        name: 'Liquid Detergent - Lemon',
-        description: 'Bright lemon freshness',
-        image: '/lovable-uploads/9ba4f387-b08a-4c47-a664-4674279ed3f1.png',
+        name: 'Blue Liquid - 300ml',
+        description: 'Large size',
+        image: '/lovable-uploads/e378202b-db45-494d-9eaa-8e30352c074a.png',
         rating: 4.8
       },
       {
         id: 22,
-        name: 'Fabric Softener',
-        description: 'Ultra-soft fabric care',
-        image: '/lovable-uploads/ea559677-d73f-4035-874a-5cbaa5db2357.png',
+        name: 'Floor Cleaner - Bouquet 1L',
+        description: 'Large floral bouquet',
+        image: '/lovable-uploads/cce9184e-4706-4015-8bbf-b0b8efdf6e2c.png',
         rating: 4.7
       },
       {
         id: 23,
-        name: 'Detergent Powder',
-        description: 'Powerful cleaning action',
-        image: '/lovable-uploads/9e12137d-c1df-49be-a9a3-41ee96268ec6.png',
+        name: 'Floor Cleaner - Fresh 1L',
+        description: 'Large fresh scent',
+        image: '/lovable-uploads/9ba4f387-b08a-4c47-a664-4674279ed3f1.png',
         rating: 4.6
       }
     ]
@@ -343,64 +343,64 @@ export const productCategories: ProductCategory[] = [
         id: 1,
         name: 'Jumbo X Coil',
         description: 'Extra-large mosquito coils',
-        image: '/lovable-uploads/a687177a-b08a-4713-a8aa-f708f2813608.png',
+        image: '/lovable-uploads/4ebaaabe-b935-4542-8a2d-ebcf410736dd.png',
         rating: 4.7
       },
       {
         id: 2,
         name: 'Black Jumbo Coil',
         description: 'Premium black coils',
-        image: '/lovable-uploads/f51d3168-0ab0-4caf-9b26-8bca3e5dfd60.png',
+        image: '/lovable-uploads/fb1c90ae-59c2-4a7f-b56b-c484cbf6e61f.png',
         rating: 4.8
       },
       {
         id: 3,
-        name: 'Liquid Repellent - 45ml',
+        name: 'Liquid Refill - 30ml',
         description: 'Compact liquid protection',
-        image: '/lovable-uploads/f5218458-5140-4d61-ade3-17c882fa0a95.png',
+        image: '/lovable-uploads/4d6b56ae-88e2-4364-8c49-477bcc38b76d.png',
         rating: 4.6
       },
       {
         id: 4,
-        name: 'Liquid Repellent - 60ml',
+        name: 'Liquid Refill - 45ml',
         description: 'Extended liquid defense',
-        image: '/lovable-uploads/cce9184e-4706-4015-8bbf-b0b8efdf6e2c.png',
+        image: '/lovable-uploads/3cea0309-4da0-499e-861e-0076f4da7a7c.png',
         rating: 4.7
       },
       {
         id: 5,
-        name: 'Super Aerosol',
-        description: 'Fast-acting spray',
-        image: '/lovable-uploads/c224c5eb-346a-4670-bc84-3364fc1add8a.png',
-        rating: 4.8
-      },
-      {
-        id: 6,
-        name: 'Fast Kill Aerosol',
-        description: 'Instant pest elimination',
-        image: '/lovable-uploads/b4f2e290-8f14-4040-b11e-1c4e5ab79717.png',
+        name: 'Machine + Refill',
+        description: 'Complete protection system',
+        image: '/lovable-uploads/ee66cfae-72dc-41af-b7df-93677ec2f639.png',
         rating: 4.9
       },
       {
+        id: 6,
+        name: 'Super Aerosol',
+        description: 'Fast-acting spray',
+        image: '/lovable-uploads/2beea866-805e-4777-9cd8-a5117090b1ae.png',
+        rating: 4.8
+      },
+      {
         id: 7,
-        name: 'Super Fast Kill',
-        description: 'Maximum strength formula',
-        image: '/lovable-uploads/5fbaccfe-76aa-4e45-b10d-fe1016e58c53.png',
-        rating: 5
+        name: 'Fast Kill Green',
+        description: 'Jasmine fragrance',
+        image: '/lovable-uploads/ff7759c5-e031-4ae5-b43d-9a615846f369.png',
+        rating: 4.7
       },
       {
         id: 8,
-        name: 'Insect Killer Chalk',
-        description: 'Long-lasting barrier',
-        image: '/lovable-uploads/79a95d7b-9949-45a1-b0b6-e15461690114.png',
-        rating: 4.5
+        name: 'Fast Kill Red',
+        description: 'Citrus-powered defense',
+        image: '/lovable-uploads/50ac9642-b4bb-4e1f-a925-d0515f4abc6f.png',
+        rating: 4.6
       },
       {
         id: 9,
-        name: 'Insecticide Powder',
+        name: 'Insect Killer Powder',
         description: 'Targeted powder treatment',
-        image: '/lovable-uploads/30bbfb02-1255-4644-9150-00da413d34df.png',
-        rating: 4.6
+        image: '/lovable-uploads/3c22cc41-0d73-4ae0-8e9a-39b91eb40677.png',
+        rating: 4.5
       }
     ]
   },
@@ -412,79 +412,79 @@ export const productCategories: ProductCategory[] = [
     products: [
       {
         id: 1,
-        name: 'Shoe Polish - Black',
-        description: 'Classic black shine',
-        image: '/lovable-uploads/b8d5d4de-578b-474a-9975-860f72da62a4.png',
+        name: 'Instant Shine Sponge',
+        description: 'Neutral instant shine',
+        image: '/lovable-uploads/800fd492-ce0b-4556-a6c8-7776086bb052.png',
         rating: 4.7
       },
       {
         id: 2,
-        name: 'Shoe Polish - Brown',
-        description: 'Rich brown polish',
-        image: '/lovable-uploads/d79ba1a5-a338-433a-bf60-f3701149387e.png',
+        name: 'White Liquid Cleaner',
+        description: 'For white shoes',
+        image: '/lovable-uploads/910913fc-6065-44dd-a66c-c89e14397bbd.png',
         rating: 4.6
       },
       {
         id: 3,
-        name: 'Shoe Polish - Neutral',
-        description: 'Universal clear polish',
-        image: '/lovable-uploads/79bde4f0-fab4-4f9c-a763-2494823f18be.png',
-        rating: 4.5
-      },
-      {
-        id: 4,
-        name: 'Shoe Polish - Tan',
-        description: 'Natural tan finish',
-        image: '/lovable-uploads/12a0a29a-a7f6-44df-a794-9077a8af38c4.png',
-        rating: 4.6
-      },
-      {
-        id: 5,
-        name: 'Express Shiner - Black',
-        description: 'Quick black shine',
-        image: '/lovable-uploads/d67f0d1d-3187-4d42-9afc-2c5619518106.png',
+        name: 'Black Polish Tin',
+        description: '50ml water resistant',
+        image: '/lovable-uploads/47a64181-3fa6-4ea4-8937-3429ab15adbe.png',
         rating: 4.8
       },
       {
-        id: 6,
-        name: 'Express Shiner - Brown',
-        description: 'Fast brown polish',
-        image: '/lovable-uploads/a024c623-a830-416e-9082-242d24c35522.png',
+        id: 4,
+        name: 'Neutral Express Shiner',
+        description: 'Quick and easy shine',
+        image: '/lovable-uploads/852b60be-7f17-4070-b57a-94cace9da9a5.png',
+        rating: 4.5
+      },
+      {
+        id: 5,
+        name: 'Reservoir Sponge',
+        description: 'Long-lasting shine',
+        image: '/lovable-uploads/42d9cba6-0b01-4b32-b20c-b63ced464bfa.png',
         rating: 4.7
       },
       {
+        id: 6,
+        name: 'Instant Shine Liquid',
+        description: 'Black with 33% extra',
+        image: '/lovable-uploads/645233b5-4c77-4deb-9708-1995ce3cc90e.png',
+        rating: 4.9
+      },
+      {
         id: 7,
-        name: 'Regular Shiner - Black',
-        description: 'Daily black care',
-        image: '/lovable-uploads/d78c2b7f-16a5-493f-870b-749552da1306.png',
-        rating: 4.6
+        name: 'Brown Tin Polish',
+        description: 'Reliable everyday shine',
+        image: '/lovable-uploads/da4299b1-2912-4a35-b5c3-bb04cb4d45d8.png',
+        rating: 4.8
       },
       {
         id: 8,
-        name: 'Regular Shiner - Brown',
-        description: 'Everyday brown shine',
-        image: '/lovable-uploads/7bc3d217-fd58-4ebc-8c7e-0f9ca54160b1.png',
+        name: 'Regular Shiner - Black',
+        description: 'Instant shine, no hassle',
+        image: '/lovable-uploads/608f4175-b6fa-497e-9c3c-27b1570580c0.png',
         rating: 4.6
       },
       {
         id: 9,
-        name: 'Instant Shine - Black',
-        description: 'Immediate black gloss',
-        image: '/lovable-uploads/0ebe7e1f-f031-4823-8fbc-ace3a01fda31.png',
-        rating: 4.9
+        name: 'Regular Shiner - Neutral',
+        description: 'Instant shine, no hassle',
+        image: '/lovable-uploads/e341ad56-a5c3-4133-b364-cc6b46bcd737.png',
+        rating: 4.6
       },
       {
         id: 10,
-        name: 'Instant Shine - Brown',
-        description: 'Quick brown brilliance',
-        image: '/lovable-uploads/a0b57d9e-5290-46f6-9e2b-24034f93a4bd.png',
-        rating: 4.8
+        name: 'Express Shiner - Black',
+        description: 'Shine in seconds',
+        image: '/lovable-uploads/f90fe381-8b38-4149-b53b-a0f4472cf957.png',
+        rating: 4.7
       },
       {
         id: 11,
-        name: 'Instant Shine - Neutral',
-        description: 'Universal instant shine',
-        image: '/lovable-uploads/f52733e0-ced4-473e-8628-0b81bb55042c.png',
+        name: 'Express Shiner - Neutral',
+        description: 'Shine in seconds',
+        image: '/lovable-uploads/ea559677-d73f-4035-874a-5cbaa5db2357.png',
         rating: 4.7
       }
     ]
@@ -497,44 +497,44 @@ export const productCategories: ProductCategory[] = [
     products: [
       {
         id: 1,
-        name: 'Paradise Peach',
+        name: 'Peach Hand Wash',
         description: 'Sweet peach fragrance',
-        image: '/lovable-uploads/12d35a55-bb40-42d3-a3db-04732ab2c87f.png',
+        image: '/lovable-uploads/f51d3168-0ab0-4caf-9b26-8bca3e5dfd60.png',
         rating: 4.8
       },
       {
         id: 2,
-        name: 'Paradise Aloe Vera',
+        name: 'Aloe Vera Hand Wash',
         description: 'Soothing aloe vera',
-        image: '/lovable-uploads/25ed8e74-de58-4d1d-a974-a45dea7bab4d.png',
+        image: '/lovable-uploads/8ffe8251-dbbd-4cf1-a793-040b9510b79d.png',
         rating: 4.7
       },
       {
         id: 3,
-        name: 'Paradise Olive',
+        name: 'Olive Hand Wash',
         description: 'Nourishing olive extract',
-        image: '/lovable-uploads/2a72c255-0ca6-476a-b0d2-42a92226bad0.png',
+        image: '/lovable-uploads/9b60b708-1693-43dc-ad4b-d8424896e1de.png',
         rating: 4.6
       },
       {
         id: 4,
-        name: 'Paradise Orange',
+        name: 'Orange Hand Wash',
         description: 'Fresh citrus burst',
-        image: '/lovable-uploads/2a7844f0-fe61-439a-b38f-032773220814.png',
+        image: '/lovable-uploads/3f4fb6e3-8f37-4f61-9ad4-1370d51cc3b1.png',
         rating: 4.7
       },
       {
         id: 5,
-        name: 'Paradise Mix Berries',
+        name: 'Mix Berries Hand Wash',
         description: 'Berry blend freshness',
-        image: '/lovable-uploads/036ed043-3cbc-4b80-8754-b85e58ffe5ba.png',
+        image: '/lovable-uploads/12d35a55-bb40-42d3-a3db-04732ab2c87f.png',
         rating: 4.8
       },
       {
         id: 6,
-        name: 'Paradise Green Apple',
+        name: 'Green Apple Hand Wash',
         description: 'Crisp apple scent',
-        image: '/lovable-uploads/2b86ee6f-f2c9-4a06-9503-b171d070bb61.png',
+        image: '/lovable-uploads/20906f2a-f80b-4649-ae5e-46d2dfc0c552.png',
         rating: 4.7
       }
     ]
