@@ -51,7 +51,7 @@ const Hero = () => {
               delay: 4000,
               stopOnInteraction: false,
               stopOnMouseEnter: false,
-            }),
+            }) as any,
           ]}
           className="w-full h-full"
         >

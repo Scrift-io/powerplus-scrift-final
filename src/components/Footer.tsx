@@ -58,13 +58,13 @@ const Footer = () => {
               <div className="space-y-2">
                 <h4 className="text-sm font-semibold text-white">Follow Us</h4>
                 <div className="flex gap-3">
-                  <a href="https://www.facebook.com/PowerPlusPakistan?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-progressive-red transition-all duration-200">
+                  <a href="https://www.facebook.com/PowerPlusPakistan" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-progressive-red transition-all duration-200">
                     <Facebook size={20} />
                   </a>
-                  <a href="#" className="text-gray-300 hover:text-progressive-red transition-all duration-200">
+                  <a href="https://www.instagram.com/official.powerpluspk?igsh=MW14N2FqODBvNzkzcg" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-progressive-red transition-all duration-200">
                     <Instagram size={20} />
                   </a>
-                  <a href="https://www.linkedin.com/company/72101038/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-progressive-red transition-all duration-200">
+                  <a href="https://www.linkedin.com/company/progressive-group-pakistan/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-progressive-red transition-all duration-200">
                     <Linkedin size={20} />
                   </a>
                 </div>
