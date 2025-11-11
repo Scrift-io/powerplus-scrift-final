@@ -67,11 +67,11 @@ const ProductDetailsModal: React.FC<ProductDetailsModalProps> = ({
         </DialogHeader>
 
         {/* Product Image */}
-        <div className="relative w-full h-80 bg-gradient-to-b from-gray-50 to-white rounded-lg overflow-hidden">
+        <div className="relative w-full h-80 bg-gradient-to-b from-gray-50 to-white rounded-lg overflow-hidden p-6 flex items-center justify-center">
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover"
+            className="max-w-full max-h-full object-contain"
           />
         </div>
 
