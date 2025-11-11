@@ -82,11 +82,11 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
               >
                 <div className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
                   {/* Product Image */}
-                  <div className="relative h-56 bg-gradient-to-b from-gray-50 to-white p-4 flex items-center justify-center overflow-hidden">
+                  <div className="relative h-56 bg-gradient-to-b from-gray-50 to-white p-0 flex items-center justify-center overflow-hidden">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
