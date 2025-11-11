@@ -101,11 +101,26 @@ const ProductDetailsModal: React.FC<ProductDetailsModalProps> = ({
             {product.description}
           </DialogDescription>
 
-          {/* Action Button */}
-          <div className="pt-4 border-t border-gray-200">
+          {/* Action Buttons */}
+          <div className="pt-4 border-t border-gray-200 space-y-3">
+            {/* Primary: Buy Now Button */}
+            <Button
+              onClick={() => {
+                const buyNowLink = ""; // Empty for now - will be updated later
+                if (buyNowLink) {
+                  window.open(buyNowLink, '_blank');
+                }
+              }}
+              className="w-full bg-gradient-to-r from-progressive-red to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-6 text-base shadow-lg hover:shadow-xl transition-shadow"
+            >
+              Buy Now
+            </Button>
+            
+            {/* Secondary: View Full Collection Button */}
             <Button
               onClick={handleViewCategory}
-              className="w-full bg-gradient-to-r from-progressive-red to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-6 text-base"
+              variant="outline"
+              className="w-full border-2 border-progressive-red text-progressive-red hover:bg-progressive-red/5 font-semibold py-6 text-base"
             >
               View Full {categoryName} Collection
             </Button>
