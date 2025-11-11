@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronRight, Star } from 'lucide-react';
 import {
@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Product } from '@/data/products';
+import ProductDetailsModal from './ProductDetailsModal';
 
 interface ProductCarouselProps {
   title: string;
@@ -24,6 +25,18 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
   categoryPath,
 }) => {
   const navigate = useNavigate();
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openProductModal = (product: Product) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedProduct(null), 300);
+  };
 
   const renderStars = (rating: number = 0) => {
     return (
@@ -113,7 +126,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
 
                     {/* Action Button */}
                     <button
-                      onClick={() => navigate(categoryPath)}
+                      onClick={() => openProductModal(product)}
                       className="w-full bg-gradient-to-r from-progressive-red to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md text-sm"
                     >
                       View Details
@@ -126,6 +139,15 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
           <CarouselPrevious className="hidden md:flex -left-4" />
           <CarouselNext className="hidden md:flex -right-4" />
         </Carousel>
+
+        {/* Product Details Modal */}
+        <ProductDetailsModal
+          product={selectedProduct}
+          categoryName={title}
+          categoryPath={categoryPath}
+          isOpen={isModalOpen}
+          onClose={closeModal}
+        />
       </div>
     </section>
   );
