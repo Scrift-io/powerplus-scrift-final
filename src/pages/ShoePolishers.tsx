@@ -317,6 +317,7 @@ const ShoePolishers = () => {
                     {product.description}
                   </p>
                   <Button 
+                    onClick={() => window.open('http://www.pakpowermart.pk', '_blank')}
                     className="w-full bg-progressive-red hover:bg-red-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center gap-2"
                   >
                     <ShoppingCart size={16} />
