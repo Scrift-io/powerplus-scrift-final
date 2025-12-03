@@ -12,9 +12,9 @@ interface ProductRangeBannerProps {
 
 const ProductRangeBanner = ({ title, description, bannerImage, categoryPath }: ProductRangeBannerProps) => {
   return (
-    <div className="py-8 md:py-12">
-      {/* Full-Width Banner Image - Edge to Edge */}
-      <div className="relative w-full h-72 md:h-96 lg:h-[500px] xl:h-[600px] bg-gradient-to-b from-gray-50 to-white overflow-hidden flex items-center justify-center px-4 md:px-8 lg:px-16">
+    <div className="py-12 md:py-16 lg:py-20">
+      {/* Full-Width Banner Image - No background, inherits from parent */}
+      <div className="relative w-full h-72 md:h-96 lg:h-[450px] xl:h-[500px] overflow-hidden flex items-center justify-center px-4 md:px-8 lg:px-16">
         <img
           src={bannerImage}
           alt={title}
