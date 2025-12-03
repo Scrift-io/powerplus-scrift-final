@@ -106,7 +106,7 @@ const ProductDetailsModal: React.FC<ProductDetailsModalProps> = ({
             {/* Primary: Buy Now Button */}
             <Button
               onClick={() => {
-                const buyNowLink = ""; // Empty for now - will be updated later
+                const buyNowLink = "http://www.pakpowermart.pk";
                 if (buyNowLink) {
                   window.open(buyNowLink, '_blank');
                 }
