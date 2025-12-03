@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowLeft, ShoppingCart, Star, Headphones, RotateCcw, Shield, Truck } from 'lucide-react';
+import { ArrowLeft, ShoppingCart, Star, Headphones, RotateCcw, Shield, Truck, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, PaginationEllipsis } from '@/components/ui/pagination';
-import { usePagination } from '@/hooks/usePagination';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductPageHeader from '@/components/ProductPageHeader';
@@ -14,6 +12,7 @@ const ShoePolishers = () => {
   const [carouselApi, setCarouselApi] = useState<any>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
+  const [activeImageIndex, setActiveImageIndex] = useState<Record<number, number>>({});
 
   const headerKeywords = [
     'Professional',
@@ -27,106 +26,44 @@ const ShoePolishers = () => {
   const products = [
     {
       id: 1,
-      name: 'Instant Shoe Shine Sponge',
-      description: 'Neutral instant shine sponge for quick shoe polishing',
-      image: '/lovable-uploads/800fd492-ce0b-4556-a6c8-7776086bb052.png',
+      name: 'Instant Shoe Shine Sponge - Black',
+      description: 'Gives an instant shine to all smooth and synthetic leathers and accessories. Not suitable for suede, nubuck or fabric. Keep out of reach of children.',
+      images: [
+        '/lovable-uploads/black_instant.png',
+        '/lovable-uploads/black_instant2.png',
+        '/lovable-uploads/black_instant3.png'
+      ],
       category: 'Shoe Polish',
       rating: 4.7,
       reviews: 234
     },
     {
       id: 2,
-      name: 'White Liquid Shoe Cleaner',
-      description: 'Specialized cleaner for white shoes and accessories',
-      image: '/lovable-uploads/910913fc-6065-44dd-a66c-c89e14397bbd.png',
-      category: 'Shoe Polish',
-      rating: 4.6,
-      reviews: 189
-    },
-    {
-      id: 3,
-      name: 'Black Shoe Polish Tin',
-      description: '50ml black shoe polish with water resistant formula',
-      image: '/lovable-uploads/47a64181-3fa6-4ea4-8937-3429ab15adbe.png',
-      category: 'Shoe Polish',
-      rating: 4.8,
-      reviews: 312
-    },
-    {
-      id: 4,
-      name: 'Neutral Express Shiner',
-      description: 'Quick and easy shine for instant sparkle',
-      image: '/lovable-uploads/852b60be-7f17-4070-b57a-94cace9da9a5.png',
-      category: 'Shoe Polish',
-      rating: 4.5,
-      reviews: 156
-    },
-    {
-      id: 5,
-      name: 'Shoe Shine Reservoir Sponge',
-      description: 'Neutral reservoir sponge for long-lasting shine',
-      image: '/lovable-uploads/42d9cba6-0b01-4b32-b20c-b63ced464bfa.png',
-      category: 'Shoe Polish',
-      rating: 4.7,
-      reviews: 201
-    },
-    {
-      id: 6,
-      name: 'Instant Shoe Shine Liquid',
-      description: 'Black liquid shine with 33% extra content',
-      image: '/lovable-uploads/645233b5-4c77-4deb-9708-1995ce3cc90e.png',
+      name: 'Express Shining Sponge - Black',
+      description: 'Quick shine for busy days. Large size express shining sponge provides instant, mess-free shine without brushing or buffing. Perfect for office, travel, or emergency touch-ups.',
+      images: [
+        '/lovable-uploads/black.png',
+        '/lovable-uploads/black2.png',
+        '/lovable-uploads/black3.png'
+      ],
       category: 'Shoe Polish',
       rating: 4.9,
       reviews: 278
     },
     {
-      id: 7,
-      name: 'Brown Tin Shoe Polish',
-      description: 'Reliable shine, everyday confidence. 44ml brown tin polish delivers rich color and brilliant shine with conditioning formula that nourishes leather while shielding from cracking and fading.',
-      image: '/lovable-uploads/da4299b1-2912-4a35-b5c3-bb04cb4d45d8.png',
+      id: 3,
+      name: 'Express Shining Sponge - Neutral',
+      description: 'Quick shine for all colored leather shoes. Neutral formula provides clear, streak-free shine without altering shoe color. Built-in applicator sponge for easy use.',
+      images: [
+        '/lovable-uploads/neutral1.png',
+        '/lovable-uploads/neutral2.png',
+        '/lovable-uploads/neutral3.png'
+      ],
       category: 'Shoe Polish',
       rating: 4.8,
       reviews: 245
-    },
-    {
-      id: 8,
-      name: 'Regular Shiner - Black',
-      description: 'Instant shine, no hassle. Quick solution for busy days providing instant, mess-free shine without brushing or buffing. Perfect for office, travel, or emergency touch-ups.',
-      image: '/lovable-uploads/608f4175-b6fa-497e-9c3c-27b1570580c0.png',
-      category: 'Shoe Polish',
-      rating: 4.6,
-      reviews: 189
-    },
-    {
-      id: 9,
-      name: 'Regular Shiner - Neutral',
-      description: 'Instant shine, no hassle. Quick solution for busy days providing instant, mess-free shine without brushing or buffing. Just glide across shoe surface for sleek, polished look in seconds.',
-      image: '/lovable-uploads/e341ad56-a5c3-4133-b364-cc6b46bcd737.png',
-      category: 'Shoe Polish',
-      rating: 4.6,
-      reviews: 167
-    },
-    {
-      id: 10,
-      name: 'Express Shiner - Black',
-      description: 'Shine in seconds, anywhere, anytime. Built-in applicator sponge provides clear, streak-free shine on leather and synthetic surfaces. Keep it in your bag, car, or office.',
-      image: '/lovable-uploads/f90fe381-8b38-4149-b53b-a0f4472cf957.png',
-      category: 'Shoe Polish',
-      rating: 4.7,
-      reviews: 203
-    },
-    {
-      id: 11,
-      name: 'Express Shiner - Neutral',
-      description: 'Shine in seconds, anywhere, anytime. For instant brilliance without mess, provides clear, streak-free shine on leather and synthetic surfaces with built-in applicator sponge.',
-      image: '/lovable-uploads/ea559677-d73f-4035-874a-5cbaa5db2357.png',
-      category: 'Shoe Polish',
-      rating: 4.7,
-      reviews: 178
     }
   ];
-
-  const pagination = usePagination(products, 6);
 
   const features = [
     {
@@ -166,6 +103,27 @@ const ShoePolishers = () => {
     ));
   };
 
+  const nextImage = (productId: number, totalImages: number) => {
+    setActiveImageIndex(prev => ({
+      ...prev,
+      [productId]: ((prev[productId] || 0) + 1) % totalImages
+    }));
+  };
+
+  const prevImage = (productId: number, totalImages: number) => {
+    setActiveImageIndex(prev => ({
+      ...prev,
+      [productId]: ((prev[productId] || 0) - 1 + totalImages) % totalImages
+    }));
+  };
+
+  const setImageIndex = (productId: number, index: number) => {
+    setActiveImageIndex(prev => ({
+      ...prev,
+      [productId]: index
+    }));
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -185,7 +143,7 @@ const ShoePolishers = () => {
     productCards.forEach(card => observer.observe(card));
 
     return () => observer.disconnect();
-  }, [pagination.currentPage]);
+  }, []);
 
   useEffect(() => {
     if (!carouselApi) return;
@@ -279,89 +237,99 @@ const ShoePolishers = () => {
       <section className="pb-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pagination.currentItems.map((product, index) => (
-              <div
-                key={product.id}
-                data-product-id={product.id.toString()}
-                className={`product-card group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform ${
-                  visibleProducts.has(product.id.toString()) 
-                    ? 'translate-y-0 opacity-100' 
-                    : 'translate-y-10 opacity-0'
-                }`}
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <div className="relative h-64 overflow-hidden bg-gradient-to-b from-gray-50 to-white p-4 flex items-center justify-center">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-110"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-progressive-dark-grey mb-3 group-hover:text-progressive-red transition-colors duration-200">
-                    {product.name}
-                  </h3>
-                  
-                  {/* Rating */}
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="flex">
-                      {renderStars(product.rating)}
+            {products.map((product, index) => {
+              const currentImageIndex = activeImageIndex[product.id] || 0;
+              return (
+                <div
+                  key={product.id}
+                  data-product-id={product.id.toString()}
+                  className={`product-card group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform ${
+                    visibleProducts.has(product.id.toString()) 
+                      ? 'translate-y-0 opacity-100' 
+                      : 'translate-y-10 opacity-0'
+                  }`}
+                  style={{ transitionDelay: `${index * 100}ms` }}
+                >
+                  <div className="relative h-64 overflow-hidden bg-gradient-to-b from-gray-50 to-white p-4 flex items-center justify-center">
+                    <img
+                      src={product.images[currentImageIndex]}
+                      alt={`${product.name} - View ${currentImageIndex + 1}`}
+                      className="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    
+                    {/* Navigation Arrows */}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        prevImage(product.id, product.images.length);
+                      }}
+                      className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1.5 shadow-md transition-all opacity-0 group-hover:opacity-100"
+                      aria-label="Previous image"
+                    >
+                      <ChevronLeft className="w-5 h-5 text-progressive-dark-grey" />
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        nextImage(product.id, product.images.length);
+                      }}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1.5 shadow-md transition-all opacity-0 group-hover:opacity-100"
+                      aria-label="Next image"
+                    >
+                      <ChevronRight className="w-5 h-5 text-progressive-dark-grey" />
+                    </button>
+
+                    {/* Dot Indicators */}
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+                      {product.images.map((_, idx) => (
+                        <button
+                          key={idx}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setImageIndex(product.id, idx);
+                          }}
+                          className={`w-2 h-2 rounded-full transition-all ${
+                            idx === currentImageIndex 
+                              ? 'bg-progressive-red w-4' 
+                              : 'bg-gray-300 hover:bg-gray-400'
+                          }`}
+                          aria-label={`View image ${idx + 1}`}
+                        />
+                      ))}
                     </div>
-                    <span className="text-sm text-gray-600">({product.reviews})</span>
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                   </div>
                   
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                    {product.description}
-                  </p>
-                  <Button 
-                    onClick={() => window.open('http://www.pakpowermart.pk', '_blank')}
-                    className="w-full bg-progressive-red hover:bg-red-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center gap-2"
-                  >
-                    <ShoppingCart size={16} />
-                    Buy Now
-                  </Button>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-progressive-dark-grey mb-3 group-hover:text-progressive-red transition-colors duration-200">
+                      {product.name}
+                    </h3>
+                    
+                    {/* Rating */}
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="flex">
+                        {renderStars(product.rating)}
+                      </div>
+                      <span className="text-sm text-gray-600">({product.reviews})</span>
+                    </div>
+                    
+                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                      {product.description}
+                    </p>
+                    <Button 
+                      onClick={() => window.open('http://www.pakpowermart.pk', '_blank')}
+                      className="w-full bg-progressive-red hover:bg-red-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center gap-2"
+                    >
+                      <ShoppingCart size={16} />
+                      Buy Now
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
-
-          {/* Pagination */}
-          {pagination.totalPages > 1 && (
-            <div className="mt-12 flex justify-center">
-              <Pagination>
-                <PaginationContent>
-                  <PaginationItem>
-                    <PaginationPrevious 
-                      onClick={pagination.previousPage}
-                      className={!pagination.hasPreviousPage ? 'pointer-events-none opacity-50' : 'cursor-pointer'}
-                    />
-                  </PaginationItem>
-                  
-                  {Array.from({ length: pagination.totalPages }, (_, i) => i + 1).map((page) => (
-                    <PaginationItem key={page}>
-                      <PaginationLink
-                        onClick={() => pagination.goToPage(page)}
-                        isActive={page === pagination.currentPage}
-                        className="cursor-pointer"
-                      >
-                        {page}
-                      </PaginationLink>
-                    </PaginationItem>
-                  ))}
-                  
-                  <PaginationItem>
-                    <PaginationNext 
-                      onClick={pagination.nextPage}
-                      className={!pagination.hasNextPage ? 'pointer-events-none opacity-50' : 'cursor-pointer'}
-                    />
-                  </PaginationItem>
-                </PaginationContent>
-              </Pagination>
-            </div>
-          )}
         </div>
       </section>
 
