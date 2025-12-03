@@ -18,81 +18,73 @@ const BatteryCells = () => {
   const headerKeywords = ['Powerful', 'Reliable', 'Long-lasting', 'High-performance', 'Durable', 'Professional'];
   const products = [{
     id: 1,
-    name: 'Heavy Duty AA Batteries',
-    description: 'Reliable Power. Everyday Performance. Power Plus Heavy Duty AA batteries are engineered with POWER BOOST ingredients to deliver long-lasting energy to your most-used devices.',
-    image: '/lovable-uploads/Heavy_Duty_AA_Batteries.jpg',
-    category: 'Battery Cell',
-    rating: 4.8,
-    reviews: 342
-  }, {
-    id: 2,
-    name: 'Heavy Duty AAA Batteries',
-    description: 'Compact Power for Daily Essentials. Trust Power Plus Heavy Duty AAA batteries for dependable performance in compact devices.',
-    image: '/lovable-uploads/Heavy_Duty_AAA_Batteries.jpg',
-    category: 'Battery Cell',
-    rating: 4.6,
-    reviews: 268
-  }, {
-    id: 3,
-    name: 'Heavy Duty 9V Batteries',
+    name: 'Heavy Duty 9V',
     description: 'Trusted Power You Can Count On. Designed for reliability, Power Plus Heavy Duty 9V batteries deliver consistent energy for your essential home and portable electronics.',
-    image: '/lovable-uploads/Heavy_Duty_9V_Batteries.jpg',
+    image: '/lovable-uploads/9V.png',
     category: 'Battery Cell',
     rating: 4.7,
     reviews: 298
   }, {
-    id: 4,
-    name: 'Super Heavy Duty AA – 2/Card',
+    id: 2,
+    name: 'Super Heavy Duty AA Pack',
     description: 'Optimized for Everyday Reliability. Power Plus SHD AA batteries offer extended performance to keep your professional and household devices running longer.',
-    image: '/lovable-uploads/Super_Heavy_Duty_AA_2Card.jpg',
+    image: '/lovable-uploads/AA_pack.png',
     category: 'Battery Cell',
     rating: 4.8,
     reviews: 389
   }, {
-    id: 5,
-    name: 'Super Heavy Duty AAA – 2/Card',
-    description: 'Consistent Power for Compact Devices. Stay charged with Power Plus SHD AAA batteries—ideal for gaming controllers, flashlights, toys, and more.',
-    image: '/lovable-uploads/Super_Heavy_Duty_AAA_2Card.jpg',
+    id: 3,
+    name: 'Heavy Duty AA',
+    description: 'Reliable Power. Everyday Performance. Power Plus Heavy Duty AA batteries are engineered with POWER BOOST ingredients to deliver long-lasting energy to your most-used devices.',
+    image: '/lovable-uploads/HD_AA.png',
     category: 'Battery Cell',
-    rating: 4.7,
-    reviews: 312
+    rating: 4.8,
+    reviews: 342
   }, {
-    id: 6,
+    id: 4,
+    name: 'Heavy Duty AAA',
+    description: 'Compact Power for Daily Essentials. Trust Power Plus Heavy Duty AAA batteries for dependable performance in compact devices.',
+    image: '/lovable-uploads/HD_AAA.png',
+    category: 'Battery Cell',
+    rating: 4.6,
+    reviews: 268
+  }, {
+    id: 5,
     name: 'Original Equipment AA',
     description: 'Everyday Energy You Can Rely On. The OE Series AA batteries deliver optimal power for your everyday electronics with performance and longevity.',
-    image: '/lovable-uploads/Original_Equipment_AA.jpg',
+    image: '/lovable-uploads/OE-AA.png',
     category: 'Battery Cell',
     rating: 4.6,
     reviews: 523
   }, {
-    id: 7,
+    id: 6,
     name: 'Original Equipment AAA',
     description: 'Power That Fits Your Lifestyle. Designed for reliability, OE Series AAA batteries offer consistent power for daily-use electronics.',
-    image: '/lovable-uploads/Original_Equipment_AAA.jpg',
+    image: '/lovable-uploads/OE-AAA.png',
     category: 'Battery Cell',
     rating: 4.5,
     reviews: 456
   }, {
-    id: 8,
-    name: 'Premium Gold AA Batteries',
+    id: 7,
+    name: 'Premium Gold AA',
     description: 'Superior Power. Premium Performance. Premium Gold AA batteries are built to deliver unmatched performance across a wide range of household and tech devices.',
-    image: '/lovable-uploads/Premium_Gold_AA_Batteries.jpg',
+    image: '/lovable-uploads/PG_AA.png',
     category: 'Battery Cell',
     rating: 4.9,
     reviews: 678
   }, {
-    id: 9,
-    name: 'Premium Gold AAA Batteries',
+    id: 8,
+    name: 'Premium Gold AAA',
     description: 'Precision Energy for High-Performance Devices. Keep your devices running stronger, longer with Premium Gold AAA batteries.',
-    image: '/lovable-uploads/Premium_Gold_AAA_Batteries.jpg',
+    image: '/lovable-uploads/PG_AAA.png',
     category: 'Battery Cell',
     rating: 4.9,
     reviews: 543
   }, {
-    id: 10,
-    name: 'Premium Gold D-Size Batteries',
+    id: 9,
+    name: 'Premium Gold D-Size',
     description: 'Maximum Power. Maximum Endurance. Power Plus Premium Gold D batteries are built for high-drain devices requiring consistent, extended power.',
-    image: '/lovable-uploads/Premium_Gold_D_Size_Batteries.jpg',
+    image: '/lovable-uploads/PGD.png',
     category: 'Battery Cell',
     rating: 4.8,
     reviews: 234
