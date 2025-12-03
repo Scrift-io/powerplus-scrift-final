@@ -1,6 +1,50 @@
 import React from 'react';
-import ProductCarousel from './ProductCarousel';
-import { productCategories } from '@/data/products';
+import ProductRangeBanner from './ProductRangeBanner';
+
+const productRanges = [
+  {
+    id: 'battery-cells',
+    name: 'Battery Cells',
+    description: 'Power solutions that keep your devices running strong',
+    path: '/battery-cells',
+    bannerImage: '/lovable-uploads/Battrey.png'
+  },
+  {
+    id: 'air-fresheners',
+    name: 'Air Fresheners',
+    description: 'Transform your surroundings with delightful fragrances',
+    path: '/air-fresheners',
+    bannerImage: '/lovable-uploads/Room_Spray_Range.png'
+  },
+  {
+    id: 'cleaning-household',
+    name: 'Cleaning & Household',
+    description: 'Complete solutions for a spotless home',
+    path: '/cleaning-household',
+    bannerImage: '/lovable-uploads/House_Hold_Range.png'
+  },
+  {
+    id: 'insecticides',
+    name: 'Insecticides',
+    description: 'Effective protection against household pests',
+    path: '/insecticides',
+    bannerImage: '/lovable-uploads/aerosol_Range_Upd.png'
+  },
+  {
+    id: 'shoe-polishers',
+    name: 'Shoe Care Products',
+    description: 'Professional shoe care for lasting impressions',
+    path: '/shoe-polishers',
+    bannerImage: '/lovable-uploads/Shoe_Care_Range_new.png'
+  },
+  {
+    id: 'paradise-hand-wash',
+    name: 'Paradise Hand Wash',
+    description: 'Nourishing hand cleansers with delightful fragrances',
+    path: '/paradise-hand-wash',
+    bannerImage: '/lovable-uploads/Paradise_Liquid_Soap.png'
+  }
+];
 
 const ProductCarouselsSection = () => {
   return (
@@ -17,18 +61,18 @@ const ProductCarouselsSection = () => {
         </div>
       </div>
 
-      {/* Product Carousels */}
+      {/* Product Range Banners */}
       <div className="relative">
-        {productCategories.map((category, index) => (
+        {productRanges.map((range, index) => (
           <div
-            key={category.id}
+            key={range.id}
             className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
           >
-            <ProductCarousel
-              title={category.name}
-              description={category.description}
-              products={category.products}
-              categoryPath={category.path}
+            <ProductRangeBanner
+              title={range.name}
+              description={range.description}
+              bannerImage={range.bannerImage}
+              categoryPath={range.path}
             />
           </div>
         ))}
