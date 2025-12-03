@@ -62,6 +62,55 @@ const ShoePolishers = () => {
       category: 'Shoe Polish',
       rating: 4.8,
       reviews: 245
+    },
+    {
+      id: 4,
+      name: 'Instant Shoe Shine Sponge - Neutral',
+      description: 'Gives an instant shine to all smooth and synthetic leathers and accessories. Not suitable for suede, nubuck or fabric. Light colours may darken after application. Keep out of reach of children.',
+      images: [
+        '/lovable-uploads/neutral_instant.png',
+        '/lovable-uploads/neutral_instant2.png',
+        '/lovable-uploads/neutral_instant3.png'
+      ],
+      category: 'Shoe Polish',
+      rating: 4.7,
+      reviews: 198
+    },
+    {
+      id: 5,
+      name: 'Tin Polish 44ML - Black',
+      description: 'Quick and easy shine brings sparkle to your shoes. Traditional tin polish formula provides deep, lasting shine for black leather shoes.',
+      images: ['/lovable-uploads/Tin_Polish_44ML_Black.jpg'],
+      category: 'Shoe Polish',
+      rating: 4.8,
+      reviews: 312
+    },
+    {
+      id: 6,
+      name: 'Tin Polish 44ML - Brown',
+      description: 'Quick and easy shine brings sparkle to your shoes. Traditional tin polish formula provides deep, lasting shine for brown leather shoes.',
+      images: ['/lovable-uploads/Tin_Polish_44ML_brown.jpg'],
+      category: 'Shoe Polish',
+      rating: 4.8,
+      reviews: 287
+    },
+    {
+      id: 7,
+      name: 'Liquid Polish 75ML - Brown',
+      description: 'Instant Shoe Shine Liquid. Imported, water resistant, and leather nourishing formula. 75ml bottle with built-in sponge applicator for easy application.',
+      images: ['/lovable-uploads/Brown_liquid_polish.jpg'],
+      category: 'Shoe Polish',
+      rating: 4.6,
+      reviews: 156
+    },
+    {
+      id: 8,
+      name: 'Liquid Polish 75ML - Black',
+      description: 'Instant Shoe Shine Liquid. Imported, water resistant, and leather nourishing formula. 75ml bottle with built-in sponge applicator for easy application.',
+      images: ['/lovable-uploads/Liquid_Polish.jpg'],
+      category: 'Shoe Polish',
+      rating: 4.7,
+      reviews: 189
     }
   ];
 
